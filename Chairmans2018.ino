@@ -236,6 +236,29 @@ void trellisBootLEDs() {
     trellis.setLED(i);
     trellis.writeDisplay();    
     delay(50);
+
+    /*Button steps*/
+    if(i == 0){ /*Turn to Ignition */
+      
+    }
+    else if(i == 1){ /*Thermo turns on*/
+      
+    }
+    else if(i == 2){  /*fan dial 1 && hex turn to Creativity*/
+      
+    }
+    else if (i == 3){ /*Fan dial 2 && Turn to Opportunity */
+      
+    }
+    else if (i == 4){ /*Fan dial 3 && All LEDs && Turn to Interaction*/
+      
+    }
+    else if (i == 5){ /*Pull bolt && Turn to Spread*/
+      
+    }
+    else if (i == 6){ /*Turn to blank*/
+      
+    }
   }
   for (uint8_t i=0; i<TRELLIS_NUM_KEYS; i++) {
     trellis.clrLED(i);
@@ -282,4 +305,3 @@ void setThermo(int level) {
   Serial.println(levelHeight);
   setPortion(THERMO_COLOR_R, THERMO_COLOR_G, THERMO_COLOR_B, 0, (levelHeight * (level + 1)));
 }
-
