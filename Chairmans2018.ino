@@ -2,7 +2,7 @@
 #include <FastLED.h>
 #include <Wire.h>
 #include "Adafruit_Trellis.h"
-
+ 
 // Comment out for prod to save memory
 #define DEBUG 1
 
